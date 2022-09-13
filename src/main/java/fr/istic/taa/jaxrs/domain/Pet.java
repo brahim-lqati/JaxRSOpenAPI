@@ -1,19 +1,27 @@
 package fr.istic.taa.jaxrs.domain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import io.swagger.v3.oas.models.tags.Tag;
+import lombok.Data;
 
 @XmlRootElement(name = "Pet")
-public class Pet {
+@Entity
+@Data
+public class Pet implements Serializable {
+  @Id @GeneratedValue
   private long id;
   private String name;
-  private List<Tag> tags = new ArrayList<Tag>();
+  //private List<Tag> tags = new ArrayList<Tag>();
 
   @XmlElement(name = "id")
   public long getId() {
@@ -33,7 +41,7 @@ public class Pet {
     this.name = name;
   }
 
-  @XmlElementWrapper(name = "tags")
+/*  @XmlElementWrapper(name = "tags")
   @XmlElement(name = "tag")
   public List<Tag> getTags() {
     return tags;
@@ -41,5 +49,5 @@ public class Pet {
 
   public void setTags(List<Tag> tags) {
     this.tags = tags;
-  }
+  }*/
 }

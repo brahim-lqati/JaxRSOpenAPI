@@ -1,0 +1,10 @@
+/home/brahimlq/TAA/JaxRSOpenAPI/src/main/java/fr/istic/taa/jaxrs/RestServer.java
+/home/brahimlq/TAA/JaxRSOpenAPI/src/main/java/fr/istic/taa/jaxrs/dao/generic/EntityManagerHelper.java
+/home/brahimlq/TAA/JaxRSOpenAPI/src/main/java/fr/istic/taa/jaxrs/domain/Pet.java
+/home/brahimlq/TAA/JaxRSOpenAPI/src/main/java/fr/istic/taa/jaxrs/service/PetService.java
+/home/brahimlq/TAA/JaxRSOpenAPI/src/main/java/fr/istic/taa/jaxrs/TestApplication.java
+/home/brahimlq/TAA/JaxRSOpenAPI/src/main/java/fr/istic/taa/jaxrs/dao/PetDao.java
+/home/brahimlq/TAA/JaxRSOpenAPI/src/main/java/fr/istic/taa/jaxrs/rest/PetResource.java
+/home/brahimlq/TAA/JaxRSOpenAPI/src/main/java/fr/istic/taa/jaxrs/dao/generic/IGenericDao.java
+/home/brahimlq/TAA/JaxRSOpenAPI/src/main/java/fr/istic/taa/jaxrs/dao/IPetDao.java
+/home/brahimlq/TAA/JaxRSOpenAPI/src/main/java/fr/istic/taa/jaxrs/dao/generic/AbstractJpaDao.java

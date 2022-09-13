@@ -9,17 +9,31 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
 import fr.istic.taa.jaxrs.domain.Pet;
+import fr.istic.taa.jaxrs.service.PetService;
 import io.swagger.v3.oas.annotations.Parameter;
+
+import java.util.List;
 
 @Path("/pet")
 @Produces({"application/json", "application/xml"})
 public class PetResource {
+  private PetService petService;
+
+  public PetResource() {
+    this.petService = new PetService();
+  }
+
+  @GET
+  public List<Pet> getAllPet() {
+    return petService.getAll();
+  }
 
   @GET
   @Path("/{petId}")
   public Pet getPetById(@PathParam("petId") Long petId)  {
       // return pet
-      return new Pet();
+    System.out.println("coco");
+     return new Pet();
   }
 
   @POST
